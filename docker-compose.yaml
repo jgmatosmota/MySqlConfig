@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   meuDB:
-    image: mysql:5.7
+    image: jgmatosmota/sql-hemera-tech:latest
     container_name: meuDB
     command: --default-authentication-plugin=mysql_native_password
     environment:
@@ -12,5 +12,5 @@ services:
       MYSQL_PASSWORD: 1234
       MYSQL_ROOT_HOST: "%"
     ports:
-      - "3307:3306"
+      - "3306:3306"
     mem_limit: 1g
